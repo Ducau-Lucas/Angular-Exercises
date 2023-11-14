@@ -1,0 +1,89 @@
+.createApprenant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.addRecord{
+    padding: 12px 40px;
+    background-color: brown;
+    text-decoration: none;
+    border-radius: 10px;
+    color: beige;
+}
+
+.container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  
+}
+.card {
+    margin-top: 40px;
+  max-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 35px;
+  border: 1px solid rgba(82, 82, 82, 0.363);
+  border-radius: 20px;
+  transition: 300ms; 
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    box-shadow: 10px 10px 0px 0px rgb(82, 82, 82);
+    transform: translate(-5px, -5px);
+    transition: 600ms;
+}
+
+.profile_image {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.profile_image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.apprenant_info ul {
+   display: flex;
+   flex-direction: column;   
+   padding-inline-start: 0px;
+   gap: 15px;
+}
+.apprenant_info ul li span {
+    font-weight: bold;
+ }
+
+ .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .links a {
+    padding: 15px 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
+ }
+ .links a i {
+    color: beige;
+ }
