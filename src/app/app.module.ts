@@ -10,6 +10,8 @@ import { EditApprenantComponent } from './edit-apprenant/edit-apprenant.componen
 import { NavbarComponent } from './navbar/navbar.component';
 import { Page404Component } from './page404/page404.component';
 import { FooterComponent } from './footer/footer.component';
+import { ViewApprenantComponent } from './view-apprenant/view-apprenant.component';
+import { GestionFormationComponent } from './gestion-formation/gestion-formation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     EditApprenantComponent,
     NavbarComponent,
     Page404Component,
-    FooterComponent
+    FooterComponent,
+    ViewApprenantComponent,
+    GestionFormationComponent
   ],
   imports: [
     BrowserModule,
