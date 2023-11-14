@@ -4,3 +4,37 @@
         Ajouter un apprenant
     </a>
 </section>
+
+<div>
+    <h3>Liste des Apprenants</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus incidunt dolorum deleniti assumenda nihil nam, sapiente vero cumque iste, tenetur sunt sequi quis laborum temporibus necessitatibus? Quas soluta voluptas possimus.</p>
+</div>
+
+<div *ngIf="errMsg">
+    <h3>Erreur de chargement de contenu : {{errMsg}} </h3>
+</div>
+
+<section class="container" *ngIf="apprenants.length > 0">
+    <div class="card-cont" *ngFor="let apprenant of apprenants">
+        <div class="card">
+            <div class="profile_image">
+                <img [src]="apprenant.avatar" alt="">
+            </div>
+
+            <div class="apprenant_info">
+                <ul>
+                    <li><span>Nom:</span>{{apprenant.nom}}</li>
+                    <li><span>Prénom:</span>{{apprenant.prenom}}</li>
+                    <li><span>Email:</span>{{apprenant.email}}</li>
+                    <li><span>Tel:</span>{{apprenant.tel}}</li>
+                </ul>
+            </div>
+
+            <div class="links">
+                <a routerLink="/apprenants/edit/:apprenantId">Editer</a>
+                <a routerLink="/apprenants/view/:apprenantId">Afficher</a>
+                <a >Supprimer</a>
+            </div>
+        </div>
+    </div>
+</section>
