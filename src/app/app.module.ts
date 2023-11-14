@@ -9,6 +9,7 @@ import { AddApprenantComponent } from './add-apprenant/add-apprenant.component';
 import { EditApprenantComponent } from './edit-apprenant/edit-apprenant.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Page404Component } from './page404/page404.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Page404Component } from './page404/page404.component';
     AddApprenantComponent,
     EditApprenantComponent,
     NavbarComponent,
-    Page404Component
+    Page404Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
