@@ -3,5 +3,6 @@ export interface FormationI {
     nom: string,
     niveau: string,
     annee: string,
-    duree: number
+    duree: number,
+    img: string
 }

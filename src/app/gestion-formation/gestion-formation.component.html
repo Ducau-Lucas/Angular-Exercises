@@ -1,1 +1,27 @@
-<p>gestion-formation works!</p>
+<div>
+    <h3>Liste des Formations</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus incidunt dolorum deleniti assumenda nihil nam, sapiente vero cumque iste, tenetur sunt sequi quis laborum temporibus necessitatibus? Quas soluta voluptas possimus.</p>
+</div>
+
+<div *ngIf="errMsg">
+    <h3>Erreur de chargement de contenu : {{errMsg}} </h3>
+</div>
+
+<section class="container" *ngIf="formations.length > 0">
+    <div class="card-cont" *ngFor="let formation of formations">
+        <div class="card">
+            <div class="profile_image">
+                <img [src]="formation.img" alt="">
+            </div>
+            
+            <div class="formation_info">
+                <ul>
+                    <li><span>Nom:</span>{{formation.nom}}</li>
+                    <li><span>Niveau:</span>{{formation.niveau}}</li>
+                    <li><span>Année:</span>{{formation.annee}}</li>
+                    <li><span>Durée:</span>{{formation.duree}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -74,21 +74,24 @@
           "nom": "cda",
           "niveau": "bac+3",
           "annee": "2023",
-          "duree": 2
+          "duree": 2,
+          "img": "https://i0.wp.com/fabriquenumerique.fr/wp-content/uploads/2022/04/unsplash_pCqzMe04s8g-1.png?fit=720%2C400&ssl=1"
       },
       {
           "id": 2,
           "nom": "dwm",
           "niveau": "bac+3",
           "annee": "2022",
-          "duree": 2
+          "duree": 2,
+          "img": "https://i0.wp.com/fabriquenumerique.fr/wp-content/uploads/2022/05/formation-courtes.jpg?fit=1200%2C600&ssl=1"
       },
       {
           "id": 3,
           "nom": "tai",
           "niveau": "bac+3",
           "annee": "2022",
-          "duree": 2
+          "duree": 2,
+          "img": "https://i0.wp.com/fabriquenumerique.fr/wp-content/uploads/2022/04/unsplash_K7OUs6y_cm8.png?fit=720%2C400&ssl=1"
       }
     ]
   }

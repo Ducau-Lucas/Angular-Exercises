@@ -1,11 +1,8 @@
 nav {
-    height: 100px;
-    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(82, 82, 82, 0.363);
     margin-bottom: 25px;
 }
 
