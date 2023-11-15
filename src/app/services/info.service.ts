@@ -26,9 +26,20 @@ export class InfoService {
   }
 
 
+
   getAllFormations() {
     const formationURL : string = `${this.serverURL}/formations`
     return this.httpClient.get<FormationI[]>(formationURL).pipe(catchError(this.ErrorHandlingFunc))
+  }
+
+  getFormationById(formationId : string) :Observable<FormationI> {
+    const formationIdUrl : string = `${this.serverURL}/formations/${formationId}`
+    return this.httpClient.get<FormationI>(formationIdUrl).pipe(catchError(this.ErrorHandlingFunc))
+  }
+
+  getFormationApprenant(apprenant: ApprenantI) {
+    const formationApprenantURL: string = `${this.serverURL}/formations/${apprenant.formationId}`;
+    return this.httpClient.get<FormationI>(formationApprenantURL).pipe(catchError(this.ErrorHandlingFunc))
   }
   
   public ErrorHandlingFunc(err: HttpErrorResponse) {

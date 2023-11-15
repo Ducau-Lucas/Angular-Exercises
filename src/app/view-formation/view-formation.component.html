@@ -1,0 +1,27 @@
+
+<section class="createApprenant">
+    <h2></h2>
+</section>
+<div class="container">
+    <h3 class="container-title">Détails</h3>
+</div>
+
+<!-- Errors -->
+<div *ngIf="errMsg">
+<h3>ERROR LOADING CONTENT : {{errMsg}}</h3>
+</div>
+<div class="card">
+    <div class="profile_image">
+        <img [src]="formation.img" alt="">
+    </div>
+
+    <div class="apprenant_info">
+        <li><span>Nom: {{formation.nom}}</span></li>
+        <li><span>Niveau: {{formation.niveau}}</span></li>
+        <li><span>Année: {{formation.annee}}</span></li>
+        <li><span>Durée: {{formation.duree}}</span></li>
+
+    </div>
+</div>
+
+<a routerLink="/formation">Retour</a>

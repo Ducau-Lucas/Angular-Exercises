@@ -7,6 +7,7 @@ import { EditApprenantComponent } from './edit-apprenant/edit-apprenant.componen
 import { ViewApprenantComponent } from './view-apprenant/view-apprenant.component';
 import { Page404Component } from './page404/page404.component';
 import { GestionFormationComponent } from './gestion-formation/gestion-formation.component';
+import { ViewFormationComponent } from './view-formation/view-formation.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: "formation", component: GestionFormationComponent
+  },
+  {
+    path: "formation/view/:formationId", component: ViewFormationComponent
   },
   {
     path: "**", component: Page404Component

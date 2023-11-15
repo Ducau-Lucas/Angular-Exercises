@@ -1,0 +1,77 @@
+.createApprenant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.card {
+margin-top: 40px;
+margin-bottom: 40px;
+  max-width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 35px;
+  border: 1px solid rgba(82, 82, 82, 0.363);
+  border-radius: 20px;
+  transition: 300ms; 
+  background-color: rgba(255, 221, 190, 0.256)
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    box-shadow: 10px 10px 0px 0px rgb(82, 82, 82);
+    transform: translate(-10px, -10px);
+    transition: 600ms;
+}
+.profile_image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.profile_image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   
+}
+
+.apprenant_info ul {
+   display: flex;
+   flex-direction: column;   
+   padding-inline-start: 0px;
+   gap: 15px;
+}
+.apprenant_info ul li,  .apprenant_info ul li span {
+   
+    font-size: 20px;
+ }
+.apprenant_info ul li span {
+    font-weight: bold;
+    margin-right: 10px;
+ }
+
+ .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .links a {
+    padding: 15px 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+ }
+ .links a i {
+    color: beige;
+ }

@@ -1,6 +1,6 @@
 
 <section class="createApprenant">
-    <h2>{{apprenant.nom}} {{apprenant.prenom}}</h2>
+    <h2>{{apprenant.nom | uppercase}} {{apprenant.prenom | uppercase}}</h2>
 </section>
 <div class="container">
     <h3 class="container-title">Détails</h3>
@@ -21,11 +21,12 @@
         <li><span>Age: {{apprenant.age}}</span></li>
         <li><span>Email: {{apprenant.email}}</span></li>
         <li><span>Tel: {{apprenant.tel}}</span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
+        <li><span>Formation: {{formation.nom}}</span></li>
+        <li><span>Année: {{formation.annee}}</span></li>
+        <li><span>Niveau: {{formation.niveau}}</span></li>
+        <li *ngIf="apprenant.enEntreprise"><span>Entreprise: Oui</span></li>
+        <li *ngIf="!apprenant.enEntreprise"><span>Entreprise: Non</span></li>
+        <li><span>Nom de l'entreprise: {{apprenant.entreprise}}</span></li>
     </div>
 </div>
 

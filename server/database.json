@@ -9,7 +9,8 @@
         "formationId": 3,
         "enEntreprise": true,
         "age": 58,
-        "avatar": "https://media.discordapp.net/attachments/1046839148587270195/1147613550609702962/image0.gif"
+        "avatar": "https://media.discordapp.net/attachments/1046839148587270195/1147613550609702962/image0.gif",
+        "entreprise": "Yeet & Co"
         
       },
       {
@@ -21,7 +22,8 @@
         "formationId": 1,
         "enEntreprise": true,
         "age": 58,
-        "avatar": "https://media.tenor.com/r_0tIF9jenEAAAAC/brightcleandndfun-matt-mercer.gif"
+        "avatar": "https://media.tenor.com/r_0tIF9jenEAAAAC/brightcleandndfun-matt-mercer.gif",
+        "entreprise": "Poogers Attorney at Law"
       },
       {
         "id": 3,

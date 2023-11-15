@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ViewApprenantComponent } from './view-apprenant/view-apprenant.component';
 import { GestionFormationComponent } from './gestion-formation/gestion-formation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewFormationComponent } from './view-formation/view-formation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     Page404Component,
     FooterComponent,
     ViewApprenantComponent,
-    GestionFormationComponent
+    GestionFormationComponent,
+    ViewFormationComponent
   ],
   imports: [
     BrowserModule,
