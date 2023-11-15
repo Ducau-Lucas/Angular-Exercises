@@ -1,1 +1,32 @@
-{{apprenant.nom}}
+
+<section class="createApprenant">
+    <h2>{{apprenant.nom}} {{apprenant.prenom}}</h2>
+</section>
+<div class="container">
+    <h3 class="container-title">Détails</h3>
+</div>
+
+<!-- Errors -->
+<div *ngIf="errMsg">
+<h3>ERROR LOADING CONTENT : {{errMsg}}</h3>
+</div>
+<div class="card">
+    <div class="profile_image">
+        <img [src]="apprenant.avatar" alt="">
+    </div>
+
+    <div class="apprenant_info">
+        <li><span>Nom: {{apprenant.nom}}</span></li>
+        <li><span>Prénom: {{apprenant.prenom}}</span></li>
+        <li><span>Age: {{apprenant.age}}</span></li>
+        <li><span>Email: {{apprenant.email}}</span></li>
+        <li><span>Tel: {{apprenant.tel}}</span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </div>
+</div>
+
+<a routerLink="/apprenants">Retour</a>
