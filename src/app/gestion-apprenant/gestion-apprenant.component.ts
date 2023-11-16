@@ -27,5 +27,15 @@ export class GestionApprenantComponent {
       
     })
   }
+
+  deleteApprenant(apprenantId: string | number ) {
+    if(apprenantId) {
+      this.infoServ.suppressionApprenant(apprenantId).subscribe((deleteId) => {
+        this.getApprenants()
+      }, (err) => {
+        this.errMsg = err
+      })
+    }
+  }
   
 }

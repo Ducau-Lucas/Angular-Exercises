@@ -25,13 +25,29 @@ export class InfoService {
     return this.httpClient.get<ApprenantI>(apprenantIdURL).pipe(catchError(this.ErrorHandlingFunc))
   }
 
+  //Create Apprenant
+  createApprenant(apprenant: ApprenantI) {
+    const createApprenantURL : string = `${this.serverURL}/apprenants`;
+    return this.httpClient.post<ApprenantI>(createApprenantURL, apprenant).pipe(catchError(this.ErrorHandlingFunc))
+  }
 
+  suppressionApprenant(apprenantId: string | number) {
+    const deleteApprenantURL : string = `${this.serverURL}/apprenants/${apprenantId}`;
+    return this.httpClient.delete<ApprenantI>(deleteApprenantURL).pipe(catchError(this.ErrorHandlingFunc))
+  }
 
+  // Update Apprenant
+  majApprenant(apprenant: ApprenantI, apprenantId: string | number) {
+    const updateApprenantURL: string = `${this.serverURL}/apprenants/${apprenantId}`;
+    return this.httpClient.put<ApprenantI>(updateApprenantURL, apprenant).pipe(catchError(this.ErrorHandlingFunc))
+  }
+
+  // Get Formation
   getAllFormations() {
     const formationURL : string = `${this.serverURL}/formations`
     return this.httpClient.get<FormationI[]>(formationURL).pipe(catchError(this.ErrorHandlingFunc))
   }
-
+  // Get Formation By Id
   getFormationById(formationId : string) :Observable<FormationI> {
     const formationIdUrl : string = `${this.serverURL}/formations/${formationId}`
     return this.httpClient.get<FormationI>(formationIdUrl).pipe(catchError(this.ErrorHandlingFunc))

@@ -14,6 +14,7 @@ import { ViewApprenantComponent } from './view-apprenant/view-apprenant.componen
 import { GestionFormationComponent } from './gestion-formation/gestion-formation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFormationComponent } from './view-formation/view-formation.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ViewFormationComponent } from './view-formation/view-formation.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

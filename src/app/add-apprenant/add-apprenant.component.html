@@ -1,1 +1,62 @@
-<p>add-apprenant works!</p>
+<section class="createApprenant">
+    <h1>Ajouter un apprenant</h1>
+</section>
+
+<div class="txt">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, harum ad qui rem tenetur sed debitis exercitationem maiores enim iure est cum nemo, repellat quasi natus culpa nobis? Iusto, saepe?</p>
+</div>
+<section>
+<div class="container">
+    <div class="profile_image">
+        <img src="" alt="">
+    </div>
+    <a routerLink="/apprenants">Retour</a>
+</div>
+
+<div class="container">
+    <form (submit)="create()">
+        <div class="fields">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" [(ngModel)]="apprenant.nom">
+        </div>
+        <div class="fields">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" [(ngModel)]="apprenant.prenom">
+        </div>
+        <div class="fields">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" [(ngModel)]="apprenant.age">
+        </div>
+        <div class="fields">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" [(ngModel)]="apprenant.email">
+        </div>
+        <div class="fields">
+            <label for="tel">Téléphone</label>
+            <input type="text" id="tel" name="tel"[(ngModel)]="apprenant.tel">
+        </div>
+        <div class="fields">
+            <label for="avatar">Avatar</label>
+            <input type="text" id="avatar" name="avatar" [(ngModel)]="apprenant.avatar">
+        </div>
+        <div class="fields">
+            <label for="enEntreprise">En Entreprise</label>
+            <select name="enEntreprise" id="" [(ngModel)]="apprenant.enEntreprise">
+                <option>Oui</option>
+                <option>Non</option>
+            </select>
+        </div>
+        <div class="fields">
+            <label for="entreprise">Entreprise</label>
+            <input type="text" id="entreprise" name="entreprise" [(ngModel)]="apprenant.entreprise">
+        </div>
+        <div class="fields" *ngIf="formations.length > 0">
+            <label for="formation">Sélectionner une formation</label>
+            <select name="formationId" id="" [(ngModel)]="apprenant.formationId">
+                <option value="formations" *ngFor="let formationList of formations" [value]="formationList.id">{{formationList.nom}}</option>
+            </select>
+        </div>
+        <input type="submit" value="Créer" />
+    </form>
+</div>
+</section>

@@ -33,7 +33,7 @@
             <div class="links">
                 <a routerLink="/apprenants/edit/{{apprenant.id}}">Editer</a>
                 <a routerLink="/apprenants/view/{{apprenant.id}}">Afficher</a>
-                <a >Supprimer</a>
+                <a (click)="deleteApprenant(apprenant.id)">Supprimer</a>
             </div>
         </div>
     </div>
