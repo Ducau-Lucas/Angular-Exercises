@@ -15,6 +15,7 @@ import { GestionFormationComponent } from './gestion-formation/gestion-formation
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFormationComponent } from './view-formation/view-formation.component';
 import { FormsModule } from '@angular/forms';
+import { NomColorDirective } from './directive/nom-color.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ViewApprenantComponent,
     GestionFormationComponent,
-    ViewFormationComponent
+    ViewFormationComponent,
+    NomColorDirective
   ],
   imports: [
     BrowserModule,
