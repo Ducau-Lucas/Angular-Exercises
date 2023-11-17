@@ -42,6 +42,12 @@ export class InfoService {
     return this.httpClient.put<ApprenantI>(updateApprenantURL, apprenant).pipe(catchError(this.ErrorHandlingFunc))
   }
 
+  // Update Formation
+  majFormation(formation: FormationI, formationId: string | number) {
+    const updateFormationURL: string = `${this.serverURL}/formations/${formationId}`;
+    return this.httpClient.put<FormationI>(updateFormationURL, formation).pipe(catchError(this.ErrorHandlingFunc))
+  }
+
   // Get Formation
   getAllFormations() {
     const formationURL : string = `${this.serverURL}/formations`

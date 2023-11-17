@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewFormationComponent } from './view-formation/view-formation.component';
 import { FormsModule } from '@angular/forms';
 import { NomColorDirective } from './directive/nom-color.directive';
+import { AddFormationComponent } from './add-formation/add-formation.component';
+import { EditFormationComponent } from './edit-formation/edit-formation.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { NomColorDirective } from './directive/nom-color.directive';
     ViewApprenantComponent,
     GestionFormationComponent,
     ViewFormationComponent,
-    NomColorDirective
+    NomColorDirective,
+    AddFormationComponent,
+    EditFormationComponent
   ],
   imports: [
     BrowserModule,

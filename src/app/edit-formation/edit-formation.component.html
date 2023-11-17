@@ -1,0 +1,40 @@
+<section class="createApprenant">
+    <h1>Editer une Formation</h1>
+</section>
+
+
+<div class="txt">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat placeat cupiditate tempore recusandae debitis quaerat obcaecati laudantium sequi ipsam officiis, iure adipisci, fugit repudiandae deserunt voluptatibus? Aspernatur, sequi debitis.</p>
+</div>
+
+<section>
+    <div class="container">
+    <div class="profile_image">
+        <img [src]="" />
+    </div>
+    <a routerLink="/formation">Retour</a>
+</div>
+
+
+<div class="container">
+    <form (submit)="updateFormation()">
+        <div class="fields">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" [value]="formation.nom" [(ngModel)]="formation.nom">
+        </div>
+        <div class="fields">
+            <label for="niveau">Niveau</label>
+            <input type="text" id="niveau" name="niveau" [value]="formation.niveau" [(ngModel)]="formation.niveau">
+        </div>
+        <div class="fields">
+            <label for="annee">Année</label>
+            <input type="text" id="annee" name="annee" [value]="formation.annee" [(ngModel)]="formation.annee">
+        </div>
+        <div class="fields">
+            <label for="duree">Durée</label>
+            <input type="text" id="duree" name="duree" [value]="formation.duree" [(ngModel)]="formation.duree">
+        </div>
+        <input type="submit" value="Update" />
+    </form>
+</div>
+</section>

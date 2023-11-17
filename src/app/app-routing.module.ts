@@ -8,6 +8,8 @@ import { ViewApprenantComponent } from './view-apprenant/view-apprenant.componen
 import { Page404Component } from './page404/page404.component';
 import { GestionFormationComponent } from './gestion-formation/gestion-formation.component';
 import { ViewFormationComponent } from './view-formation/view-formation.component';
+import { AddFormationComponent } from './add-formation/add-formation.component';
+import { EditFormationComponent } from './edit-formation/edit-formation.component';
 
 const routes: Routes = [
   {
@@ -30,6 +32,12 @@ const routes: Routes = [
   },
   {
     path: "formation/view/:formationId", component: ViewFormationComponent
+  },
+  {
+    path: "formation/add", component: AddFormationComponent
+  },
+  {
+    path: "formation/edit/:formationId", component: EditFormationComponent
   },
   {
     path: "**", component: Page404Component
